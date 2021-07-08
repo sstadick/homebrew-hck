@@ -23,13 +23,11 @@ class Hck < Formula
 
     depends_on "wget" => :build
     depends_on "rust" => :build
-    depends_on "rustup-init" => :build
+    depends_on "llvm" => :build
 
     def install
     #   ENV["RUSTFLAGS"] = "-Ctarget-cpu=native -Cllvm-args=-pgo-warn-missing-function -Cprofile-use=#{Dir.pwd}/pgo-data/merged.profdata"
     #   system "cargo", "build", "--release", "--bin", "hck"
-      system "rustup-init", "-y"
-      system "rustup", "component", "add", "llvm-tools-preview"
       system "bash", "pgo_local.sh"
       bin.install "target/release/hck"
     end
