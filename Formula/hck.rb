@@ -2,7 +2,7 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Hck < Formula
-    version "0.3.1"
+    version "0.3.2"
     desc "A faster and more featureful clone of cut."
     homepage "https://github.com/sstadick/hck"
     license any_of: ["MIT", "UNLICENSE"]
