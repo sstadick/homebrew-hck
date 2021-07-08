@@ -25,7 +25,7 @@ class Hck < Formula
 
     def install
       ENV["RUSTFLAGS"] = "-Ctarget-cpu=native -Cllvm-args=-pgo-warn-missing-function -Cprofile-use=$(pwd)/pgo-data/merged.profdata"
-      system "cargo", "build", "--release", "--bin", "rustscan"
-      bin.install "target/release/rustscan"
+      system "cargo", "build", "--release", "--bin", "hck"
+      bin.install "target/release/hck"
     end
   end
