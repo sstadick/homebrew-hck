@@ -18,7 +18,7 @@ class Hck < Formula
     end
 
     def install
-        `mv hck-moacos-amd hck`
+        `mv hck-* hck`
         bin.install "hck"
     end
 
