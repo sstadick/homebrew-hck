@@ -2,19 +2,19 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Hck < Formula
-    version "0.3.2"
+    version "0.3.3"
     desc "A faster and more featureful clone of cut."
     homepage "https://github.com/sstadick/hck"
     license any_of: ["MIT", "UNLICENSE"]
 
     if OS.linux?
-        # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.3.2/hck-linux-amd64-src.tar.gz | shasum -a 256
-        url "https://github.com/sstadick/hck/releases/download/v0.3.2/hck-linux-amd64-src.tar.gz"
-        sha256 "cf739e4a8207fd5dc7273bb7cf31846945b6f7245890d6f2cc2883e459b6dc03"
+        # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.3.3/hck-linux-amd64-src.tar.gz | shasum -a 256
+        url "https://github.com/sstadick/hck/releases/download/v0.3.3/hck-linux-amd64-src.tar.gz"
+        sha256 "5b5192f550dcdf4cc1c12549f08fa673712b50341669786e614111f6dd054eb0"
     elsif OS.mac?
-        # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.3.2/hck-macos-amd64-src.tar.gz | shasum -a 256
-        url "https://github.com/sstadick/hck/releases/download/v0.3.2/hck-macos-amd64-src.tar.gz"
-        sha256 "c84b4eecf467cc887d74760e059f63734bb4b0996fbdf420175bea186706806a"
+        # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.3.3/hck-macos-amd64-src.tar.gz | shasum -a 256
+        url "https://github.com/sstadick/hck/releases/download/v0.3.3/hck-macos-amd64-src.tar.gz"
+        sha256 "da31c43b43441c5376f5cfd11a69ad3b8c7282674e82ac25e33e1cee58975f33"
     end
 
     def install
