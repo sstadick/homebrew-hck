@@ -2,7 +2,7 @@ class Hck < Formula
   desc "Faster and more featureful clone of cut"
   homepage "https://github.com/sstadick/hck"
   license any_of: ["MIT", "Unlicense"]
-  version "0.6.0"
+  version "0.6.1"
 
   if OS.linux?
     # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.6.1/hck-linux-amd64 | shasum -a 256
