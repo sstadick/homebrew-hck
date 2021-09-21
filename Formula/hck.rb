@@ -2,16 +2,16 @@ class Hck < Formula
   desc "Faster and more featureful clone of cut"
   homepage "https://github.com/sstadick/hck"
   license any_of: ["MIT", "Unlicense"]
-  version "0.6.3"
+  version "0.6.5"
 
   if OS.linux?
-    # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.6.3/hck-linux-amd64 | shasum -a 256
+    # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.6.5/hck-linux-amd64 | shasum -a 256
     url "https://github.com/sstadick/hck/releases/download/v#{version}/hck-linux-amd64"
-    sha256 "6d87104aa3c4e1d4f5cc7114a439bb6908ea8a97257a5c2b2a7416f403e87a38"
+    sha256 "fd4755808bd64f1df9e8a3cd6169898b91bdb9e70ab145095353bf2ba18bfd5b"
   elsif OS.mac?
-    # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.6.3/hck-macos-amd64 | shasum -a 256
+    # wget -q -S -O - https://github.com/sstadick/hck/releases/download/v0.6.5/hck-macos-amd64 | shasum -a 256
     url "https://github.com/sstadick/hck/releases/download/v#{version}/hck-macos-amd64"
-    sha256 "7275a8c9770345e2b3e94271afd78d538b3d4ce0511fb815d2a0aab17d13b58f"
+    sha256 "05eeaa7de582f73111dfddc1f97aedb7a9b11859eebdf26f5ccea295f2957c22"
   end
 
   def install
